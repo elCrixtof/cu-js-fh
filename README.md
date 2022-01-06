@@ -1,4 +1,3 @@
-# CU_JS_FH
 # NOTAS DE CURSO JAVASCRIPT DE FERNANDO HERRERA
 ___
 ## Introducción a JavaScript
