@@ -10,7 +10,9 @@ ___
 2. **ES6/ES2015, ES7/ES2016, ES8/ES2017:**
     - Soportados por la mayoría de navegadores modernos, pero no por todos los navegadores web
 
-#Pruebas con Markdown
+- javaScript es un lenguaje interpretado, eso quiere decir que al compilar el código el orden en que lo hace es de manera secuencial de inicio a fin
+
+# Pruebas con Markdown
 ~~~~
 esto es código
 ~~~~
