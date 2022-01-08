@@ -12,7 +12,45 @@ ___
 
 - javaScript es un lenguaje interpretado, eso quiere decir que al compilar el código el orden en que lo hace es de manera secuencial de inicio a fin
 
+## Fundamentos de JavaScript
+
+### Primitivos
+
+Tipo de dato de una variable
+Javascript es un lenguaje débilmente tipado ya que javascript lo va a tipar dependiendo sin que nosotros lo tengamos que hacer de manera explicita, esto quiere decir que podemos declarar un string o números sin necesidad de hacerlo manualmente.
+
+El tipo de dato de una variable describe el contenido del valor que tienen la varaible en si. 
+
+
+¿Qué son los primitivos?
+Es información que no es un objeto y son inmutables.
+Hay 6 tipos de datos primitivos:
+boolean - true/false
+null - sin valor en lo absoluto
+undefined - una variable declarada que aún no se le asigna valor
+number - integers, floats, etc.
+string - una cadena de caracteres
+symbol - es un valor único que no es igual a ningún otro valor
+
+
+
+Palabras reservadas
+
+Arreglos
+
+Objetos literales
+
+Funciones básicas
+
+Funciones de flecha
+
+Retorno de las funciones
+
+Ejercicios y ejemplos con cada tipo expuesto
+
+
 # Pruebas con Markdown
+___
 ~~~~
 esto es código
 ~~~~
