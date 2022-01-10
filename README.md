@@ -24,19 +24,21 @@ El tipo de dato de una variable describe el contenido del valor que tienen la va
 
 **¿Qué son los primitivos?**
 Es información que no es un objeto y son inmutables.
-Hay 6 tipos de datos primitivos:
-boolean - true/false
-null - sin valor en lo absoluto
-undefined - una variable declarada que aún no se le asigna valor
-number - integers, floats, etc.
-string - una cadena de caracteres
-symbol - es un valor único que no es igual a ningún otro valor
+Hay 6 tipos de datos primitivos.
+| Datos Primitivos | - |
+| ----------- | ------------- |
+| boolean | true/false |
+| null | sin valor en lo absoluto |
+| undefined | una variable declarada que aún no se le asigna valor |
+| number | integers, floats, etc. |
+| string | una cadena de caracteres |
+| symbol | es un valor único que no es igual a ningún otro valor |
 
 ### Palabras reservadas
 Son palabras que tienen un uso específico para el que fueron creadas.
 
 **Lista de palabras reservadas**
-|  |  |  |
+| - | Palabras reservadas | - |
 | ----------- | ------------- | ----------- |
 | break | export | super |
 | case | extends | switch |
@@ -51,15 +53,15 @@ Son palabras que tienen un uso específico para el que fueron creadas.
 | else | return | yield |
 | let | | |
 
-**Palabras reservadas en un futuro**
-|  |  |  |
+**Lista de palabras reservadas en un futuro**
+| - | Palabras reservadas en un futuro | - |
 | --- | --- | --- |
 | enum | package | public |
 | implements | private | static |
 | interface | protected | await |
 
-**Evitar usar**
-|  |  |  |
+**Lista de palabras que hay que evitar usar**
+| - | Evitar usar | - |
 | --- | --- | --- |
 | null | undefined | true |
 | false | hasOwnProperty | undefined |
@@ -69,7 +71,15 @@ Son palabras que tienen un uso específico para el que fueron creadas.
 | name | Number | Object |
 | String | toString | prompt |
 | alert | conform | |
-Arreglos
+
+### Arreglos
+Son un objeto parecido a una lista de información, que contienen un grupo de elementos. Usualmente toda la información o grupo de elementos dentro del arreglo es del mismo tipo de dato (no siempre sucede).
+
+~~~
+let videoJuegos = ['Mario 3', 'Zelda', 'Halo'];
+videoJuegos[1]; // Zelda
+~~~
+
 
 Objetos literales
 
