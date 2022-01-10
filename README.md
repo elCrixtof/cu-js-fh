@@ -16,13 +16,13 @@ ___
 
 ### Primitivos
 
-Tipo de dato de una variable
+**Tipo de dato de una variable**
 Javascript es un lenguaje débilmente tipado ya que javascript lo va a tipar dependiendo sin que nosotros lo tengamos que hacer de manera explicita, esto quiere decir que podemos declarar un string o números sin necesidad de hacerlo manualmente.
 
 El tipo de dato de una variable describe el contenido del valor que tienen la varaible en si. 
 
 
-¿Qué son los primitivos?
+**¿Qué son los primitivos?**
 Es información que no es un objeto y son inmutables.
 Hay 6 tipos de datos primitivos:
 boolean - true/false
@@ -35,7 +35,7 @@ symbol - es un valor único que no es igual a ningún otro valor
 ### Palabras reservadas
 Son palabras que tienen un uso específico para el que fueron creadas.
 
-Lista de palabras reservadas
+**Lista de palabras reservadas**
 |  |  |  |
 | ----------- | ------------- | ----------- |
 | break | export | super |
