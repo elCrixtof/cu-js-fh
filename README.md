@@ -51,6 +51,24 @@ Son palabras que tienen un uso específico para el que fueron creadas.
 | else | return | yield |
 | let | | |
 
+**Palabras reservadas en un futuro**
+| | |
+| --- | --- | --- |
+| enum | package | public |
+| implements | private | static |
+| interface | protected | await |
+
+**Evitar usar**
+| | |
+| --- | --- | --- |
+| null | undefined | true |
+| false | hasOwnProperty | undefined |
+| isNaN | Infinity | isFinite |
+| NaN | length | Math |
+| isPrototypeOf | prototype | valueOf |
+| name | Number | Object |
+| String | toString | prompt |
+| alert | conform | |
 Arreglos
 
 Objetos literales
