@@ -35,12 +35,7 @@ symbol - es un valor único que no es igual a ningún otro valor
 Palabras reservadas
 Son palabras que tienen un uso específico para el que fueron creadas.
 
- Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-
-|             Palabras reservadas           |
+             Palabras reservadas           
 | ----------- | ------------- | ----------- |
 | break        | export         | super        |
 | case         | extends        | switch       |
@@ -53,6 +48,7 @@ Son palabras que tienen un uso específico para el que fueron creadas.
 | delete       | instanceof     | while        |
 | do           | new            | with         | 
 | else         | return         | yield        |
+| let         |          |         |
 
 Arreglos
 
