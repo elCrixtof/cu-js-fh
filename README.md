@@ -52,14 +52,14 @@ Son palabras que tienen un uso específico para el que fueron creadas.
 | let | | |
 
 **Palabras reservadas en un futuro**
-| | |
+|  |  |  |
 | --- | --- | --- |
 | enum | package | public |
 | implements | private | static |
 | interface | protected | await |
 
 **Evitar usar**
-| | |
+|  |  |  |
 | --- | --- | --- |
 | null | undefined | true |
 | false | hasOwnProperty | undefined |
