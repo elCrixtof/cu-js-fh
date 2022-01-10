@@ -32,9 +32,27 @@ number - integers, floats, etc.
 string - una cadena de caracteres
 symbol - es un valor único que no es igual a ningún otro valor
 
-
-
 Palabras reservadas
+Son palabras que tienen un uso específico para el que fueron creadas.
+
+ Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+
+|             Palabras reservadas           |
+| ----------- | ------------- | ----------- |
+|break        |export         |super        |
+|case         |extends        |switch       |
+|catch        |finally        |this         |
+|class        |for            |throw        |
+|const        |function       |try          | 
+|continue     |if             |typeof       |
+|debugger     |import         |var          |
+|default      |in             |void         |
+|delete       |instanceof     |while        |
+|do           |new            |with         | 
+|else         |return         |yield        |
 
 Arreglos
 
