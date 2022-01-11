@@ -117,12 +117,12 @@ Podemos decir que la variable ***colorDelSol*** tiene asignada un string literal
     };
     ~~~
     Las fnciones flechas tienen algunas ventajas a la hora de simplificar código bastante interesantes:
-        - Si el cuerpo de la función sólo tiene una línea, podemos omitir las llaves ({}).
-        Además, en ese caso, automáticamente se hace un return de esa única línea, por lo que podemos omitir también el return.
-        - En el caso de que la función no tenga parámetros, se indica como en el ejemplo anterior: () =>.
-        - En el caso de que la función tenga un solo parámetro, se puede indicar simplemente el nombre del mismo: e =>.
-        - En el caso de que la función tenga 2 ó más parámetros, se indican entre paréntesis: (a, b) =>.
-        - Si queremos devolver un objeto, que coincide con la sintaxis de las llaves, se puede englobar con paréntesis: ({name: 'Manz'}).
+    - Si el cuerpo de la función sólo tiene una línea, podemos omitir las llaves ({}).
+    > Además, en ese caso, automáticamente se hace un return de esa única línea, por lo que podemos omitir también el return.
+    - En el caso de que la función no tenga parámetros, se indica como en el ejemplo anterior: () =>.
+    - En el caso de que la función tenga un solo parámetro, se puede indicar simplemente el nombre del mismo: e =>.
+    - En el caso de que la función tenga 2 ó más parámetros, se indican entre paréntesis: (a, b) =>.
+    - Si queremos devolver un objeto, que coincide con la sintaxis de las llaves, se puede englobar con paréntesis: ({name: 'Manz'}).
     Por lo tanto, el ejemplo anterior se puede simplificar aún más:
     ~~~
     const func = () => "Función flecha."; // 0 parámetros: Devuelve "Función flecha"
