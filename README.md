@@ -1,6 +1,10 @@
 # NOTAS DE CURSO JAVASCRIPT DE FERNANDO HERRERA
 ___
 ## Introducción a JavaScript
+**Tipos de variables**
+1. Variables Locales: una variable local es aquella que está declarada dentro de un bloque de código, por lo general dentro de una función (aunque puede estar declarada también dentro de un condicional o una estructura repetitiva), se caracteriza por que se declara usando la palabra reservada var o let.
+2. Variables Globales: una variable global es toda aquella que está definida fuera de todo bloque de código.
+*Un bloque de código es aquel que está delimitado por llaves.*
 - var era la forma antigua de crear variables
 - var se sigue usando porque js requiere ser compatible con las viejas versiones
 
@@ -80,12 +84,54 @@ let videoJuegos = ['Mario 3', 'Zelda', 'Halo'];
 videoJuegos[1]; // Zelda
 ~~~
 
+### Objetos literales
+La definición de literal alude a algo textual, por ejemplo, si declaramos una variable de la siguiente manera:
+~~~
+let colorDelSol = 'Amarillo';
+~~~
 
-Objetos literales
+Podemos decir que la variable ***colorDelSol*** tiene asignada un string literal ya que se asigna el valor textualmente.
 
-Funciones básicas
+- Un objeto es la estructura de datos más usada en javascript, compuesta de pares ordenados y agrupados en claves y valores.
+- Se denomina objeto literal al objeto cuyas propiedades están declaradas textualmente en el código.
+- Los objetos pueden almacenar métodos en su interior.
+- Para acceder a las propiedades de un objeto dentro de un método es necesario usar la palabra reservada this por scope de las variables.
+- A diferencia de otros lenguajes de programación se pueden añadir, actualizar, o eliminar propiedades de una manera muy poco usual pero bastante simple.
 
-Funciones de flecha
+### Funciones básicas y flecha.
+- Funciones por declaración:
+    Esta forma permite declarar una función que existirá a lo largo de todo el código
+- Funciones por expresión **funciones anónimas** (o *funciones lambda*).
+    Estamos creando una función en el interior de una variable, lo que nos permitirá posteriormente ejecutar la variable (como si fuera una función).
+    Las funciones anónimas o funciones lambda son un tipo de funciones que se declaran sin nombre de función y se alojan en el interior de una variable y haciendo referencia a ella cada vez que queramos utilizarla:
+    > **La diferencia fundamental entre las funciones por declaración y las funciones por expresión es que estas últimas sólo están disponibles a partir de la inicialización de la variable. Si «ejecutamos la variable» antes de declararla, nos dará un error.**
+- Arrow functions.
+    Las Arrow functions, funciones flecha o «fat arrow» son una forma corta de escribir funciones que aparece en Javascript a partir de ECMAScript 6. Básicamente, se trata de reemplazar eliminar la palabra **function** y añadir **=>** antes de abrir las llaves:
+    ~~~
+    const func = function () {
+        return "Función tradicional.";
+    };
+
+    const func = () => {
+        return "Función flecha.";
+    };
+    ~~~
+    Las fnciones flechas tienen algunas ventajas a la hora de simplificar código bastante interesantes:
+        - Si el cuerpo de la función sólo tiene una línea, podemos omitir las llaves ({}).
+        Además, en ese caso, automáticamente se hace un return de esa única línea, por lo que podemos omitir también el return.
+        - En el caso de que la función no tenga parámetros, se indica como en el ejemplo anterior: () =>.
+        - En el caso de que la función tenga un solo parámetro, se puede indicar simplemente el nombre del mismo: e =>.
+        - En el caso de que la función tenga 2 ó más parámetros, se indican entre paréntesis: (a, b) =>.
+        - Si queremos devolver un objeto, que coincide con la sintaxis de las llaves, se puede englobar con paréntesis: ({name: 'Manz'}).
+    Por lo tanto, el ejemplo anterior se puede simplificar aún más:
+    ~~~
+    const func = () => "Función flecha."; // 0 parámetros: Devuelve "Función flecha"
+    const func = (e) => e + 1; // 1 parámetro: Devuelve el valor de e + 1
+    const func = (a, b) => a + b; // 2 parámetros: Devuelve el valor de a + b
+    ~~~
+    Más info en [Manz.dev](https://lenguajejs.com/javascript/fundamentos/funciones/)
+
+
 
 Retorno de las funciones
 
