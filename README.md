@@ -1,4 +1,4 @@
-# NOTAS DE CURSO JAVASCRIPT DE FERNANDO HERRERA
+# NOTAS DE JAVASCRIPT 
 ___
 ## Introducción a JavaScript
 **Tipos de variables**
