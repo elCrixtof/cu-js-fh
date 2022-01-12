@@ -131,11 +131,16 @@ Podemos decir que la variable ***colorDelSol*** tiene asignada un string literal
     ~~~
     Más info en [Manz.dev](https://lenguajejs.com/javascript/fundamentos/funciones/)
 
-
-
 Retorno de las funciones
 
 Ejercicios y ejemplos con cada tipo expuesto
+
+___
+## Ciclos y estrucutras de control
+- En primitivos cualquier tipo de asignación o cuando es enviado como argumento a una función este es enviado por VALOR 
+> TODOS LOS PRIMITIVOS SON PASADOS POR VALOR Y TODOS LOS OBJETOS SON PASADOS POR REFERENCIA.
+
+Las estructuras de control nos permiten alterar el orden de ejecución de JavaScript.
 
 
 # Pruebas con Markdown
