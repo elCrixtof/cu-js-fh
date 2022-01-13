@@ -4,8 +4,8 @@ pero los fines de semana abrimos a las 9
 */
 
 // Entra a un sitio web, para consultar si está abierto hoy...
-const dia = 6; // 0: domingo...6: sabado
-const horaActual = 9;
+const dia = 1; // 0: domingo...6: sabado
+const horaActual = 8;
 
 let horaApertura;
 let mensaje; //Está abierto, está cerrado, hoy abrimos a las XX
@@ -34,7 +34,7 @@ horaApertura = ( [0,6].includes(dia) ) ? 9 : 11;
 //     mensaje=`cerrado, hoy se abre a las ${horaApertura}`;
 // }
 
-mensaje = horaActual >= horaApertura ? 'abierto' : `cerrado, hoy se abre a las ${horaApertura}`;
+mensaje = (horaActual >= horaApertura) ? 'abierto' : `cerrado, hoy se abre a las ${horaApertura}`;
 
 console.log( horaApertura );
 console.log(mensaje);
