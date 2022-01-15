@@ -120,12 +120,14 @@ btnPedir.addEventListener('click', function() {
     }    
 });
 
+// Función que detiene el juego y deshabilita botones
 btnDetener.addEventListener('click', function() {
     btnPedir.disabled = true;
     btnDetener.disabled = true;
     turnoComputadora(puntosJugador);
 });
 
+// Función que limpia las variables
 btnNuevo.addEventListener('click', function() {
     crearDeck();
     puntosJugador = 0;
