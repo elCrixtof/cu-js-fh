@@ -1,4 +1,4 @@
-# NOTAS DE JAVASCRIPT 
+# NOTAS DE JAVASCRIPT (Curso Udemy - JavaScript - Fernando Herrera)
 ___
 ## Introducción a JavaScript
 **Tipos de variables**
@@ -142,6 +142,24 @@ ___
 
 Las estructuras de control nos permiten alterar el orden de ejecución de JavaScript.
 
+## Patrón módulo
+
+El patrón módulo consiste en un módulo donde se encapsulará toda la lógica de nuestra aplicación o proyecto. Dentro de este módulo estarán declaradas todas las variables o funciones privadas y sólo serán visibles dentro del mismo.
+
+Ventajas del patrón módulo:
+- Gran potencia y flexibilidad que permite mantener el contexto global limpio de variables y funciones.
+- Evita un montón de problemas que pueden surgir cuando tenemos un código lleno de variables globales
+- Muy útil para generar componentes re-utilizables y sobre todo modulares.
+
+~~~
+    const miModulo = (() => {
+        // Privado
+        // Público
+        return {
+
+        }
+    });
+~~~
 
 # Pruebas con Markdown
 ___
