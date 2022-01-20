@@ -160,9 +160,3 @@ Ventajas del patrón módulo:
         }
     });
 ~~~
-
-# Pruebas con Markdown
-___
-~~~~
-esto es código
-~~~~
