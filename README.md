@@ -160,3 +160,8 @@ Ventajas del patrón módulo:
         }
     });
 ~~~
+
+## Webpack
+Webpack es una herramienta configurable que nos ayudará a realizar algunas tareas básicas en el desarrollo Frontend en tareas automatizadas y preparar nuestra aplicación web para producción.
+
+Webpack es un empaquetador de módulos, es decir, te permite generar un archivo único con todos aquellos módulos que necesita tu aplicación para funcionar. Para darte una idea, te permite incluir todos tus archivos javascript .js en un único archivo, incluso se pueden incluir hasta archivos de estilos .css en el mismo archivo, llamado *.bundle.js. Además se puede realizar otras tareas de optimización de los códigos, tales como la minificación (ofuscación) y la compresión.
