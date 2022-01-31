@@ -9,11 +9,9 @@ import { crearTodoHTML } from './js/componentes';
 // const nombre = 'Fernando';
 // saludar( nombre );
 
-const nuevoTexto = 'Terminar curso de Fernando Herrera';
-const nuevaTarea = new Todo(nuevoTexto);
+export const todoList = new TodoList();
+const nuevaTarea = new Todo('Terminar curso de Fernando Herrera');
 nuevaTarea.completado = false;
 
-const listaTareas = new TodoList();
-listaTareas.newTodo(nuevaTarea);
 crearTodoHTML(nuevaTarea);
 
