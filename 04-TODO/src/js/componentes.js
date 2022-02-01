@@ -41,11 +41,17 @@ divTodoList.addEventListener('click', (event) => {
     const nombreElemento = event.target.localName; // input, label, button
     const todoElemento = event.target.parentElement.parentElement;
     const todoId = todoElemento.getAttribute('data-id');
-    
+    console.log(nombreElemento);
 
     if(nombreElemento.includes('input')){  //Click en el check
         todoList.markTodo(todoId);
         todoElemento.classList.toggle('completed')
+        console.log(todoList.getTodos());
+    }
+
+    if(nombreElemento.includes('button')) {
+        todoList.deleteTodo(todoId);
+        divTodoList.removeChild(todoElemento)
         console.log(todoList.getTodos());
     }
 

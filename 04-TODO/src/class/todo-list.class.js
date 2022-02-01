@@ -6,7 +6,13 @@ export class TodoList {
         this.todos.push(tarea);
     }
     deleteTodo(id) {
-        this.todos.pop(id)
+        for (const todo of this.todos) {
+            let i = this.todos.indexOf(todo);
+            if (todo.id == id && i !== -1) {
+                this.todos.splice(i, 1);
+            }
+
+        }
     }
     getTodos() {
         return this.todos;
