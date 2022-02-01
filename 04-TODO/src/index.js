@@ -12,6 +12,7 @@ import { crearTodoHTML } from './js/componentes';
 export const todoList = new TodoList();
 const nuevaTarea = new Todo('Terminar curso de Fernando Herrera');
 nuevaTarea.completado = false;
+todoList.newTodo(nuevaTarea);
 
 crearTodoHTML(nuevaTarea);
 

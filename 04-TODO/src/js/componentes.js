@@ -4,6 +4,7 @@ import { todoList } from "..";
 //Referencias en el HTML
 const divTodoList = document.querySelector('.todo-list');
 const txtInput = document.querySelector('.new-todo');
+const btnCheck = document.querySelectorAll('.toggle');
 
 export const crearTodoHTML = (todo) => {
     const htmlTodo = 
@@ -34,4 +35,18 @@ txtInput.addEventListener('keyup', (event) => {
         crearTodoHTML(nuevoTodo);
         txtInput.value = '';
     }
-})
+});
+
+divTodoList.addEventListener('click', (event) => {
+    const nombreElemento = event.target.localName; // input, label, button
+    const todoElemento = event.target.parentElement.parentElement;
+    const todoId = todoElemento.getAttribute('data-id');
+    
+
+    if(nombreElemento.includes('input')){  //Click en el check
+        todoList.markTodo(todoId);
+        todoElemento.classList.toggle('completed')
+        console.log(todoList.getTodos());
+    }
+
+});

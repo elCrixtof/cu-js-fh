@@ -12,7 +12,13 @@ export class TodoList {
         return this.todos;
     }
     markTodo(id){
-        this.todos(id).completado = true;
+        //Función que marca o desmarca una tarea
+        for( const todo of this.todos ){
+            console.log(id, todo.id);
+            if( todo.id == id){
+                todo.completado = !todo.completado;
+            }
+        }
     }
     getStatus(id) { 
         this.todos(id).completado;
