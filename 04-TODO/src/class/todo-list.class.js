@@ -1,3 +1,5 @@
+import { Todo } from ".";
+
 export class TodoList {
     constructor () {
         this.loadLocalStorage();
@@ -23,7 +25,7 @@ export class TodoList {
     markTodo(id){
         //Función que marca o desmarca una tarea
         for( const todo of this.todos ){
-            console.log(id, todo.id);
+            // console.log(id, todo.id);
             if( todo.id == id){
                 todo.completado = !todo.completado;
             }
@@ -54,6 +56,12 @@ export class TodoList {
         // } else {
         //     this.todos = [];
         // }
-        this.todos = localStorage.getItem('todos') ? JSON.parse(localStorage.getItem('todos')) : this.todos = [] ;
+        this.todos = localStorage.getItem('todos') 
+                     ? JSON.parse(localStorage.getItem('todos')) 
+                     : this.todos = [] ;
+        // console.log(this.todos);
+        // this.todos = this.todos.map(obj => Todo.fromJson(obj));
+        this.todos = this.todos.map(Todo.fromJson);
+        // console.log(this.todos);
     }
 }
