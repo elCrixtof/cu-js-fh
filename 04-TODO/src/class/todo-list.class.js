@@ -6,13 +6,14 @@ export class TodoList {
         this.todos.push(tarea);
     }
     deleteTodo(id) {
-        for (const todo of this.todos) {
-            let i = this.todos.indexOf(todo);
-            if (todo.id == id && i !== -1) {
-                this.todos.splice(i, 1);
-            }
+        // for (const todo of this.todos) {
+        //     let i = this.todos.indexOf(todo);
+        //     if (todo.id == id && i !== -1) {
+        //         this.todos.splice(i, 1);
+        //     }
 
-        }
+        // }
+        this.todos = this.todos.filter(todo => todo.id != id);
     }
     getTodos() {
         return this.todos;
@@ -30,11 +31,14 @@ export class TodoList {
         this.todos(id).completado;
     }
     deleteCompleteTodos(){
-        for(let element in this.todos){
-            let i = this.todos.indexOf(element);
-            if(element.completado === true && i !== -1){
-                this.todos.slice(i, 1);
-            }
-        }
+        // for(let element of this.todos){
+        //     console.log(element.completado);
+        //     let i = this.todos.indexOf(element);
+        //     if(element.completado === true && i !== -1){
+        //         this.todos.splice(i, 1);
+        //     }
+        // }
+
+        this.todos = this.todos.filter(todo=>!todo.completado);
     }
 }

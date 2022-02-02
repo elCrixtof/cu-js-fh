@@ -10,9 +10,13 @@ import { crearTodoHTML } from './js/componentes';
 // saludar( nombre );
 
 export const todoList = new TodoList();
-const nuevaTarea = new Todo('Terminar curso de Fernando Herrera');
-nuevaTarea.completado = false;
-todoList.newTodo(nuevaTarea);
+// const nuevaTarea = new Todo('Terminar curso de Fernando Herrera');
+// nuevaTarea.completado = false;
+// todoList.newTodo(nuevaTarea);
+// crearTodoHTML(nuevaTarea);
 
-crearTodoHTML(nuevaTarea);
 
+// localStorage.setItem('mi-key', 'ABC123');
+// setTimeout(() => {
+//     localStorage.removeItem('mi-key');
+// }, 1500);
