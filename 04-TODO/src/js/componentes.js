@@ -26,6 +26,15 @@ export const crearTodoHTML = (todo) => {
 
 }
 
+export const cargarTodos = () => {
+    const todos = todoList.getTodos();
+    // console.log(todos);
+    divTodoList.innerHTML = ''
+    todos.forEach(element => {
+        crearTodoHTML(element);
+    });
+};
+
 //Eventos
 txtInput.addEventListener('keyup', (event) => {
     if (event.keyCode === 13 && txtInput.value.length > 0) {
@@ -55,7 +64,7 @@ divTodoList.addEventListener('click', (event) => {
     // Elimina tarea 
     if(nombreElemento.includes('button')) {
         todoList.deleteTodo(todoId);
-        divTodoList.removeChild(todoElemento)
+        divTodoList.removeChild(todoElemento);
         console.log(todoList.getTodos());
     }
 
