@@ -1,11 +1,14 @@
 import './styles.css';
 import { buscarHeroe } from './js/callbacks';
 
-const heroeId = 'capi';
+const heroeId = 'capi2';
 
-buscarHeroe( heroeId, (heroe) => {
-    // console.log(`${heroe.nombre}`);
-    console.log(heroe);
+buscarHeroe( heroeId, (err) => {
+    if(err) {
+        console.err(err);
+    }else {
+        console.error('Algo salió mal');
+    }
 });
 
 
