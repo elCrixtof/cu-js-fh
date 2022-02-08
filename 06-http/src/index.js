@@ -1,6 +1,6 @@
-import { init } from "./js/chistes-page";
-import { obtenerUsuarios } from "./js/http-provider";
+import * as CRUD from "./js/crud-provider";
+// import { init } from "./js/usuarios-page";
 
-init();
+// init();
+CRUD.getUsuario(1).then(console.log)
 
-obtenerUsuarios().then(console.log);

@@ -1,12 +1,13 @@
-
-
+import { obtenerUsuarios } from "./http-provider";
 
 const body  = document.body;
+let tBody;
 
 const crearHtml = () => {
     
     const html = `
     <h1 class="mt-5"> Usuarios</h1>
+    <hr>
 
     <table class="table">
         <thead>
@@ -28,9 +29,9 @@ const crearHtml = () => {
 
     // Crear una referencia al TBODY
     // ya que los TRs van dentro del tbody
-            // querySelector('tbody');
-            // Crear una variable para mantener la referencia?
-
+    // querySelector('tbody');
+    // Crear una variable para mantener la referencia?
+    tBody = document.querySelector('tbody');
 }
 
 
@@ -49,11 +50,11 @@ const crearFilaUsuario = ( usuario ) => {
     // También deben de colocar el avatar
 
     const html = `
-        <td scope="col"> 1. </td>
-        <td scope="col"> michael.lawson@reqres.in </td>
-        <td scope="col"> Michael Lawson </td>
+        <td scope="col"> ${usuario.id} </td>
+        <td scope="col"> ${usuario.email} </td>
+        <td scope="col"> ${usuario.first_name} ${usuario.last_name} </td>
         <td scope="col">
-            <img class="img-thumbnail" src="">
+            <img class="img-thumbnail" src=${usuario.avatar}>
         </td>
     `;
 
@@ -61,6 +62,7 @@ const crearFilaUsuario = ( usuario ) => {
     tr.innerHTML = html;
 
     // Añadir el table row (tr) dentro del TBody creado anteriormente
+    tBody.appendChild(tr);
 
 }
 
@@ -71,6 +73,12 @@ export const init = async() => {
 
     // Obtener la lista de usuarios usando el servicio creado
     // Por cada usuario, llamar la función crearFila (for, forEach)
+    (await obtenerUsuarios()).forEach(crearFilaUsuario);
+    // const usuarios = await obtenerUsuarios();    
+    // usuarios.forEach(element => {
+    //     crearFilaUsuario(element);
+    // });
+
     // Colocar el init en el index.js, para que se ejecute la creación
 
 }
