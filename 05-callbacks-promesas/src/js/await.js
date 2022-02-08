@@ -1,6 +1,8 @@
 import { buscarHeroe, buscarHeroeAsync } from "./promesas";
 
 const heroesIds = ['capi', 'spider', 'iron'];
+// const heroesPromesas = heroesIds.map(id => buscarHeroe(id));
+const heroesPromesas = heroesIds.map(buscarHeroe);
 
 // export const obtenerHeroesArr = async() => {
 //     const heoresArr = [];
@@ -47,3 +49,23 @@ export const obtenerHeroeAwait = async(id) => {
         }
     }
 };
+
+export const heroesCiclo = async() => {
+    console.time('HeroesCiclo');
+
+    for await (const heroe of heroesPromesas) {
+        console.log(heroe);
+    }
+    
+    console.timeEnd('HeroesCiclo');
+    // const heroes = await Promise.all(heroesPromesas);
+    // heroes.forEach(heroe => console.log(heroe))
+}
+
+export const heroeIfAwait = async(id) => {
+    if((await buscarHeroeAsync(id)).nombre === 'ironman') {
+        console.log('Es el mejor de todos');
+    } else {
+        console.log('Naaaa');
+    }
+}
