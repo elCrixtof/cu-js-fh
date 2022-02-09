@@ -13,6 +13,48 @@ const getUsuario = async(id) => {
     }
 };
 
+const postUsuario = async(usuario) => {
+    try {
+        const resp = await fetch(crudURL, {
+            method: 'POST',
+            body: JSON.stringify(usuario),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+        if(!resp.ok) throw 'No se pudo realizar la petición'
+        return await resp.json();
+    } catch (error) {
+        throw error;
+    }
+}
+
+const updateUsuario = async(usuario, id) => {
+    try {
+        const resp = await fetch(`${crudURL}/${id}`, {
+            method: 'PUT',
+            body: JSON.stringify(usuario),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+        if(!resp.ok) throw 'No se pudo realizar la petición'
+        return await resp.json();
+    } catch (error) {
+        throw error;
+    }
+};
+
+const deleteUsuario = async(id) => {
+    const resp = await fetch(`${crudURL}/${id}`, {
+        method: 'DELETE'
+    })
+    return (resp.ok) ? 'Borrado' : 'No se pudo eliminar'
+}
+
 export {
-    getUsuario
+    getUsuario,
+    postUsuario,
+    updateUsuario,
+    deleteUsuario
 }
